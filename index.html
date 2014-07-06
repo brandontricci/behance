@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Behance Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Side Menu -->
+
+    </div>
+    <!-- /Side Menu -->
+
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+
+           <div class="text-center">
+                        <div class="padding">
+                            <div class="img-responsive">
+
+                         <a href="#page-top"><img src="img/logodesigner.png" height="13%" width="13%" id="spin" onclick="this.className='spinning'"/></a>
+                        
+                        <a href="#about"><img src="img/logoartist.png" height="13%" width="13%" id="spin" onclick="this.className='spinning'"/></a>&nbsp;
+                        
+                        <a href="#modus"><img src="img/logowoman.png" height="13%" width="13%" id="spin" onclick="this.className='spinning'"/></a>&nbsp;
+                        
+                        <a href="#contact"><img src="img/logoteacher.png" height="13%" width="13%"id="spin" onclick="this.className='spinning'"/></a>
+
+                        <a class="clockwise"><img src="img/logosilk.png" height="8%" width="8%"id="spin" onclick="this.className='spinning'"/></a>
+
+                        <a class="button  clockwise"><img src="img/logoblog.png" height="8%" width="8%" id="spin" onclick="this.className='spinning'"/></a>
+
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+
+    <!-- /Call to Action -->
+
+    <!-- Map -->
+   
+    <!-- /Map -->
+
+    <!-- Footer -->
+         <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
