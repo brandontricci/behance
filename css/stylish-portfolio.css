@@ -11,7 +11,28 @@ body {
 
 .padding{
 
-    padding-top: 480px;
+    padding-top: 340px;
+}
+
+.fade-in .fade-in-target {
+  opacity : 0;
+  transition-property : opacity; 
+  transition-duration : 0.7s; 
+}
+
+.fade-in:hover .fade-in-target {
+  opacity : 1;
+  transition-property : opacity; 
+  transition-duration : 0.3s; 
+}
+
+#ie .fade-in .fade-in-target { 
+  visibility : hidden; 
+}
+
+#ie .fade-in:hover .fade-in-target,
+#ie6 .fade-in .fade-in-target { 
+  visibility : visible; 
 }
 
 #spin {
@@ -24,7 +45,7 @@ transition: 2s;
 -o-transition: 2s;
 }
 
-.spinning {
+.spinning:hover {
 
 /* Safari */
 -webkit-transform: rotate(-90deg);
@@ -50,6 +71,29 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
        txt-transform: rotate(360deg);
        transform: rotate(360deg);
        transform: rotate(360deg);
+}
+
+.greydout {
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+-webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.greydout {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+.greydout:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 
 img {
