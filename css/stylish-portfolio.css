@@ -35,14 +35,14 @@ body {
   visibility : visible; 
 }
 
-#spin {
+#spin:hover {
 /*general version*/
-transition: 2s;
+transition: 1s;
 /*browser specific versions*/
--moz-transition: 2s;
--ms-transition: 2s;
--webkit-transition: 2s;
--o-transition: 2s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-webkit-transition: 1s;
+-o-transition: 1s;
 }
 
 .spinning:hover {
